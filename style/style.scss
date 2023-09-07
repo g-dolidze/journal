@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space;
+  background-color: antiquewhite;
+}
+.sidebar {
+  width: 300px;
+  background-color: aquamarine;
+  height: 100vh;
+  ul {
+    width: 200px;
+    li {
+      border-bottom: 2px solid white;
+      display: flex;
+      justify-content: space-between;
+      font-size: 25px;
+    }
+  }
+}
+
+.all {
+  margin-left: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  .head {
+    width: calc(100vw - 550px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(122, 127, 159);
+    border-radius: 20px 20px 0px 0px;
+    form {
+      margin: 30px 0px 0px 30px;
+      input {
+        padding: 5px;
+        border-radius: 5px;
+      }
+      button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .btn {
+      margin-top: 30px;
+      margin-right: 20px;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+.tables {
+  width: calc(100vw - 550px);
+  top: 0;
+  border: 1px solid #777;
+  overflow-y: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: scroll;
+
+  tr {
+    width: 80px;
+    height: 50px;
+    border-bottom: 1px solid #000000;
+
+    th {
+      border-right: 1px solid #000000;
+      width: 80px;
+      position: sticky;
+      background-color: #bbbbbb;
+    }
+    td {
+      text-align: center;
+      cursor: pointer;
+      border-right: 1px solid #000000;
+      width: 80px;
+    }
+  }
+}
+table th:nth-child(1),
+table td:nth-child(1) {
+  position: sticky;
+  left: 0;
+  width: 150px;
+  background-color: aqua;
+  z-index: 2;
+}
+table th:nth-child(2),
+table td:nth-child(2) {
+  position: sticky;
+  left: 60px;
+  width: 150px;
+  background-color: aqua;
+  z-index: 2;
+}
+.day {
+  z-index: 3;
+  width: 80px;
+  height: 50px;
+  background-color: rgb(135, 10, 10);
+}
+button:hover {
+  background-color: #777;
+}
+tbody .day:hover {
+  background-color: yellow;
+}

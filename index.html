@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <h1>statistic of students result</h1>
+      <ul>
+        <li>Total Day<span id="total__days">0</span></li>
+        <li>Mised lessons<span id="missed__lessons">0</span></li>
+        <li>Average Mark<span id="average__mark">0</span></li>
+        <li>Total Students<span id="totatl__students">0</span></li>
+      </ul>
+    </div>
+
+    <div class="all">
+      <div class="head">
+        <form id="new_student">
+          <input type="text" name="" id="fullname" placeholder="Fullname" />
+          <button type="submit" id="addnew_student">add</button>
+        </form>
+        <h1>Table</h1>
+
+        <div>
+          <button id="add_btn" class="btn">Add Day</button>
+          <button id="remove_btn" class="btn">Remove Day</button>
+        </div>
+      </div>
+
+      <div class="tables">
+        <table>
+          <thead>
+            <tr class="th">
+              <th class="student__name">Full Name</th>
+              <th class="student__average">Avarage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tr tr1">
+              <th class="name">Giorgi Dolidze</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Tato Jajanidze</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Vakhtang Nodadze</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Zura gorgodze</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Saba svanidze</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Badri Esebua</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Lasha devadze</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Jhone Jhones</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">David Koma</th>
+              <td class="average">0</td>
+            </tr>
+            <tr class="tr">
+              <th class="name">Levan labadze</th>
+              <td class="average">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./newjs.js"></script>
+  </body>
+</html>
